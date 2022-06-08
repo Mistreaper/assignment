@@ -42,8 +42,13 @@ void printPrimes(int x) {
 
 // This method is a mix of checkPrime() and printPrimes(), merging them into one.
 void unifiedMethod(int x) {
+    // number that's getting tested, will increment by 1 when concluding whether a number is prime or not 
     int i = 1;
+
+    // the counter. it adds after a number is concluded to be prime. when it's equal to x, break the loop.
     int counter;
+
+    // the flag. it shall remain unchanged when the number is prime. when it is not prime, it will switch to false in the for loop.
     bool isPrime;
     while (counter <= x) {
         isPrime = true;
