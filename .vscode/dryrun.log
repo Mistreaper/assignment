@@ -1,0 +1,6 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory 'd:/mistreaper/projects/assignment'
+g++ -std=c++17 -Wall -Wextra -g -Iinclude -o output\main.exe src/main.o  -Llib
+echo Executing 'all' complete!
+make.exe: Leaving directory 'd:/mistreaper/projects/assignment'
+ 
