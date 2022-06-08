@@ -50,7 +50,7 @@ void unifiedMethod(int x) {
         if (i == 0 ||  i  == 1) {
             isPrime = false;
         }
-       for (int j = 2; j <= i/2; ++j) {
+       for (int j = 2; j < i; ++j) {
             // isPrime = true; 
            if (i % j == 0) {
                isPrime = false;
