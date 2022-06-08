@@ -52,6 +52,16 @@ void unifiedMethod(int x) {
         }
        for (int j = 2; j < i; ++j) {
             // isPrime = true; 
+
+            // remember that prime all odd except for 2 
+            if (i % 2 == 0 && i != 2) {
+                isPrime = false;
+            }
+
+            // and cannot be a multiple of 5 except for 5
+            if (i % 5 == 0 && i != 5) {
+                isPrime = false;
+            } 
            if (i % j == 0) {
                isPrime = false;
                break;
