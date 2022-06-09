@@ -43,41 +43,44 @@ void printPrimes(int x) {
 // This method is a mix of checkPrime() and printPrimes(), merging them into one.
 void unifiedMethod(int x) {
     // number that's getting tested, will increment by 1 when concluding whether a number is prime or not 
-    int i = 1;
+    // int i = 1;
 
     // the counter. it adds after a number is concluded to be prime. when it's equal to x, break the loop.
-    int counter;
-
+    int counter = 0;
+    int primeCounter = 0;
     // the flag. it shall remain unchanged when the number is prime. when it is not prime, it will switch to false in the for loop.
     bool isPrime;
-    while (counter <= x) {
+    while (primeCounter < x) {
         isPrime = true;
-        if (i == 0 ||  i  == 1) {
+        if (counter == 0 || counter  == 1) {
             isPrime = false;
-        }
-       for (int j = 2; j < i; ++j) {
-            // isPrime = true; 
+        } else {
+            for (int j = 2; j < counter; ++j) {
+                    // isPrime = true; 
 
-            // remember that prime all odd except for 2 
-            if (i % 2 == 0 && i != 2) {
-                isPrime = false;
+                    // remember that prime all odd except for 2 
+                    if (counter % 2 == 0 && counter != 2) {
+                        isPrime = false;
+                    }
+
+                    // and cannot be a multiple of 5 except for 5
+                    if (counter % 5 == 0 && counter != 5) {
+                        isPrime = false;
+                    } 
+                if (counter % j == 0) {
+                    isPrime = false;
+                    break;
+                }
             }
-
-            // and cannot be a multiple of 5 except for 5
-            if (i % 5 == 0 && i != 5) {
-                isPrime = false;
-            } 
-           if (i % j == 0) {
-               isPrime = false;
-               break;
-           }
-       }
+        }
+       
        if (isPrime) {
-           std::cout << i << " ";
-           i++;
+           std::cout << counter << " ";
+        //    i++;
            counter++;
+           primeCounter++;
        } else {
-           i++;
+           counter++;
        }
     }    
 
