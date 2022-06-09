@@ -1,0 +1,382 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-w64-mingw32
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jun 09 07:26:24 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 21)
+SRC := src
+# makefile
+MAKEFLAGS = pqrR
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# makefile (from 'Makefile', line 48)
+INCLUDES := -Iinclude
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := d:/mistreaper/projects/assignment
+# default
+SHELL := sh.exe
+# makefile (from 'Makefile', line 35)
+RM := del /q /f
+# environment
+WINDIR = C:\Windows
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\realm\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+TMP = C:\Users\realm\AppData\Local\Temp
+# makefile (from 'Makefile', line 54)
+SOURCES := src/main.cpp
+# makefile (from 'Makefile', line 10)
+CXXFLAGS := -std=c++17 -Wall -Wextra -g
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-48fdb622-2ab6-4881-baca-1c96e3af1f34-sock
+# environment
+VSCODE_CWD = C:\Users\realm\AppData\Local\Programs\Microsoft VS Code
+# default
+MAKE_HOST := x86_64-w64-mingw32
+# environment
+PATH = C:\ProgramData\scoop\shims;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\realm\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\realm\AppData\Local\Programs\Python\Python310\;C:\Users\realm\scoop\apps\mingw\current\bin;C:\Users\realm\scoop\apps\openjdk\current\bin;C:\Users\realm\scoop\shims;C:\Users\realm\AppData\Local\Microsoft\WindowsApps;C:\Users\realm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\realm\.dotnet\tools
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# makefile (from 'Makefile', line 36)
+MD := mkdir
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+USERPROFILE = C:\Users\realm
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from 'Makefile', line 33)
+LIBDIRS := lib
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 27)
+LIB := lib
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync
+# environment
+CMAKE_PREFIX_PATH = C:\Users\realm\scoop\apps\sdl2\current;
+# automatic
+%F = $(notdir $%)
+# environment
+POSH_THEMES_PATH = C:\Users\realm\scoop\apps\oh-my-posh\current\themes
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19624_VNKTMEBLKYVFCLEL
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = BREADSTICK
+# environment
+PROGRAMFILES = C:\Program Files
+# makefile (from 'Makefile', line 65)
+OUTPUTMAIN := output\main.exe
+# default
+.LOADED := 
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+PKG_CONFIG_PATH = C:\Users\realm\scoop\apps\sdl2\current\lib\pkgconfig;
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = realm
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\realm\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# environment
+LOGONSERVER = \\BREADSTICK
+# makefile (from 'Makefile', line 32)
+INCLUDEDIRS := include
+# environment
+ONEDRIVECONSUMER = C:\Users\realm\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = BREADSTICK
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 34)
+FIXPATH = $(subst /,\,$1)
+# environment
+JAVA_HOME = C:\Users\realm\scoop\apps\openjdk\current
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 24)
+INCLUDE := include
+# makefile (from 'Makefile', line 31)
+SOURCEDIRS := src
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# makefile (from 'Makefile', line 15)
+LFLAGS = 
+# environment
+LOCALAPPDATA = C:\Users\realm\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\4e35d6ba1c67ab803a2d0654b20c4be4-1.67.2-main-sock
+# environment
+HOMEPATH = \Users\realm
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# makefile (from 'Makefile', line 30)
+MAIN := main.exe
+# environment
+SYSTEMROOT = C:\Windows
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\realm\AppData\Roaming
+# environment
+TEMP = C:\Users\realm\AppData\Local\Temp
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# makefile (from 'Makefile', line 18)
+OUTPUT := output
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 7)
+CXX = g++
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 51)
+LIBS := -Llib
+# automatic
+^F = $(notdir $^)
+# environment
+GIT_INSTALL_ROOT = C:\Users\realm\scoop\apps\git\current
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = a505
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 57)
+OBJECTS := src/main.o
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+VSCODE_PID = 19624
+# environment
+USERDOMAIN_ROAMINGPROFILE = BREADSTICK
+# variable set hash-table stats:
+# Load=115/1024=11%, Rehash=0, Collisions=17/163=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key d:/mistreaper/projects/assignment, mtime 1654670438): 9 files, no impossibilities.
+# src (key d:/mistreaper/projects/assignment/src, mtime 1654670675): 5 files, no impossibilities.
+
+# 14 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all: output main.exe
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+#  recipe to execute (from 'Makefile', line 68):
+	@echo Executing 'all' complete!
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/main.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-08 13:44:35
+#  File has been updated.
+#  Successfully updated.
+
+main.exe: src/main.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.exe
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := src/main.o
+# automatic
+# | := 
+# automatic
+# < := src/main.o
+# automatic
+# ^ := src/main.o
+# automatic
+# ? := src/main.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/18=11%
+#  recipe to execute (from 'Makefile', line 74):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-08 13:41:11
+# 
+  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 90):
+	./$(OUTPUTMAIN)
+	@echo Executing 'run: all' complete!
+
+.cpp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 81):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 85):
+	$(RM) $(OUTPUTMAIN)
+	$(RM) $(call FIXPATH,$(OBJECTS))
+	@echo Cleanup complete!
+
+output:
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-08 13:45:43
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 71):
+	$(MD) $(OUTPUT)
+
+# files hash-table stats:
+# Load=11/1024=1%, Rehash=0, Collisions=0/31=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 21 / storage = 138 B / avg = 6 B
+# current buf: size = 8162 B / used = 138 B / count = 21 / avg = 6 B
+
+# strcache performance: lookups = 41 / hit rate = 48%
+# hash-table stats:
+# Load=21/8192=0%, Rehash=0, Collisions=2/41=5%
+# Finished Make data base on Thu Jun 09 07:26:24 2022
+
+ 
