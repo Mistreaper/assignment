@@ -2,21 +2,22 @@
 #define NUMPATT_H
 #include <iostream>
 
+// new number is the sum of this number (thn) and the previous number (pn)
 void fibonacci(int x) {
-
+    // this number 
     int thn = 1;
+    // previous number 
     int pn = 0;
-    std::cout << pn << " ";
-    std::cout << thn << " "; 
+    // the sum 
     int nn;
-    int counter = 1;
-    while (counter <= x) {
-        nn = thn + pn;
-        pn = thn;
-        thn = nn;
-        counter++;
-        std::cout << thn << " "; 
-    }
+    // a counter 
+    int counter = 0;
+        while (counter < x) {
+            std::cout << pn << " "; 
+            nn = thn + pn;
+            pn = thn;
+            thn = nn;
+            counter++;
+        }
 }
-
 #endif
