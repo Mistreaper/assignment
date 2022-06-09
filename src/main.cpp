@@ -1,6 +1,6 @@
 #include <iostream>
 #include "collatzconjecture.h"
-#include "primenums.h"
+#include <primenums.h>
 
 int main() {
     std::cout << "type value of counter: ";
