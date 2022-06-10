@@ -3,7 +3,8 @@
 #include "numPatt.h"
 
 int main() {
-    fibonacci(10); 
+    // expected = 4 
+    oneOneTwo(3); 
     return 0;
 
 }

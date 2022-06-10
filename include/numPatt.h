@@ -1,6 +1,23 @@
 #ifndef NUMPATT_H
 #define NUMPATT_H
 #include <iostream>
+#include <string>
+#include <vector>
+
+// Sequence: 1 1 2 1 2 3 1 2 3 4... Find the nth term in the sequence.
+void oneOneTwo(int n) {
+    int x = 1;
+    std::vector<int> v; 
+    int counter = 0;
+    while (counter < n) {
+        for (int i = 0; i < x; i++) {
+            v.push_back(i + 1); 
+            counter++; 
+        }
+        x++;
+    }
+    std::cout << v[n-1] << std::endl;
+}
 
 // new number is the sum of this number (thn) and the previous number (pn)
 void fibonacci(int x) {
