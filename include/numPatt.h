@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+void triangle(int n) {
+    for (int i = 1; i < n; i++) {
+        std::cout << " * \n";
+        for (int j = 1; j <= i; j++) {
+            std::cout << " * ";
+        } 
+    }
+    std::cout << " *\n";
+}
 // Sequence: 1 1 2 1 2 3 1 2 3 4... Find the nth term in the sequence.
 void oneOneTwo(int n) {
     int x = 1;

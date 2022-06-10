@@ -3,8 +3,7 @@
 #include "numPatt.h"
 
 int main() {
-    // expected = 4 
-    oneOneTwo(3); 
+    triangle(10); 
     return 0;
 
 }
