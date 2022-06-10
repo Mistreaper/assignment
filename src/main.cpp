@@ -3,9 +3,7 @@
 #include "numPatt.h"
 
 int main() {
-    fibonacci(10);
-    
- 
+    fibonacci(10); 
     return 0;
 
 }
