@@ -3,7 +3,7 @@
 #include "numPatt.h"
 
 int main() {
-    fibonacci(10); 
+    oneOneTwo(11); 
     return 0;
 
 }
