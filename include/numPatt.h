@@ -15,8 +15,10 @@ void fibonacci(int x) {
         while (counter < x) {
             std::cout << pn << " "; 
             nn = thn + pn;
-            pn = thn;
-            thn = nn;
+            int* thnptr = &thn;
+            int* nnptr = &nn; 
+            pn = *thnptr;
+            thn = *nnptr;
             counter++;
         }
 }

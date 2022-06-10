@@ -3,11 +3,9 @@
 #include "numPatt.h"
 
 int main() {
-    int userinput;
-    std::cout << "Enter a numberss: ";
-    std::cin >> userinput;
-    fibonacci(userinput);
-    std::cout << "" << std::endl;
+    fibonacci(10);
+    
+ 
     return 0;
 
 }
