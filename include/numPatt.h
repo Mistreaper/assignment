@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 
+// Sequence: 1 1 2 1 2 3 1 2 3 4... Find the nth term in the sequence.
 void oneOneTwo(int n) {
     int x = 1;
     std::vector<int> v; 
