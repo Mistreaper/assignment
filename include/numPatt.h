@@ -2,20 +2,20 @@
 #define NUMPATT_H
 #include <iostream>
 #include <string>
+#include <vector>
 
 void oneOneTwo(int n) {
-    bool on = true;
     int x = 1;
+    std::vector<int> v; 
     int counter = 0;
-    std::string output;
     while (counter < n) {
         for (int i = 0; i < x; i++) {
-            output.append(std::to_string(i + 1)); 
+            v.push_back(i + 1); 
             counter++; 
         }
         x++;
     }
-    std::cout << output[n] << std::endl;
+    std::cout << v[n-1] << std::endl;
 }
 
 // new number is the sum of this number (thn) and the previous number (pn)
