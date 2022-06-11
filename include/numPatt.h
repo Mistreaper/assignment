@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 
+// draws a triangle with n levels
 void triangle(int n) {
     for (int i = 1; i < n; i++) {
         std::cout << " * \n";
