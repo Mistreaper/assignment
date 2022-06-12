@@ -1,9 +1,11 @@
 #include <iostream>
 #include "primenums.h"
 #include "numPatt.h"
+#include "hack.h"
 
 int main() {
-    triangle(10); 
+    
+    hack(); 
     return 0;
 
 }
