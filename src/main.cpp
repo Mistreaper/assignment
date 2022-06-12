@@ -4,7 +4,7 @@
 #include "hack.h"
 
 int main() {
-    
+   
     hack(); 
     return 0;
 

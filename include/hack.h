@@ -49,7 +49,7 @@ int hack() {
        std::cout << "Hacking yourself...\n"; 
        std::this_thread::sleep_for(sleepDuration);
        loadingBar();         
-       std::cout << "HACK STATUS = NOT_FOUND\n";
+       std::cout << RED << "HACK STATUS = NOT_FOUND\n";
        std::this_thread::sleep_for(sleepDuration);
        return 1; 
     } else if (option == 2) {
@@ -57,7 +57,7 @@ int hack() {
        std::this_thread::sleep_for(sleepDuration);
        loadingBar();
        std::this_thread::sleep_for(sleepDuration);
-       std::cout << "Hack finished!\n";
+       std::cout << GREEN <<"Hack finished!\n";
        return 0; 
     } else if (option == 3) {
        std::cout << "Finding a nearby device...\n";
@@ -68,10 +68,10 @@ int hack() {
        std::this_thread::sleep_for(sleepDuration);
        loadingBar();
        std::this_thread::sleep_for(sleepDuration);
-       std::cout << "Hack finished!\n";
+       std::cout << GREEN <<"Hack finished!\n";
        return 0; 
     } else {
-        std::cout << "ERROR: OPTION_NOT_FOUND\n";
+        std::cout << RED <<"ERROR: OPTION_NOT_FOUND\n";
         return 1;
     }
     return 0;
