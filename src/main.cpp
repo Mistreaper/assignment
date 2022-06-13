@@ -4,8 +4,7 @@
 #include "hack.h"
 
 int main() {
-   
-    hack(); 
+    // hack();
+    collatzConjecture(23); 
     return 0;
-
 }
