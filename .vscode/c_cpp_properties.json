@@ -5,6 +5,7 @@
             "includePath": [
                 "${default}",
                 "${workspaceFolder}/include",
+                "C:\\ProgramData\\scoop\\apps\\SDL2\\current\\include"
             ],
             "defines": [
                 "_DEBUG",
