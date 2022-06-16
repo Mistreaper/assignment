@@ -4,6 +4,28 @@
 #include <string>
 #include <vector>
 
+void eTriangle(int x) {
+    // space counter
+    int spaceCounter = x;
+    // asterisk counter
+    int asteriskCounter = 1;
+    for (int i = 0; i < x; i++) {
+        // for the spaces
+        for (int i = 0; i < spaceCounter; i++) {
+            std::cout << " ";
+        }
+        spaceCounter--;
+        // for printing asterisk after space
+        for (int i = 0; i < asteriskCounter; i++) {
+            std::cout << "*";
+            // create newline
+            if (i == asteriskCounter - 1) {
+                std::cout << "\n";
+            }
+        }
+        asteriskCounter+=2;
+    }
+}
 // draws a triangle with n levels
 void triangle(int n) {
     for (int i = 1; i < n; i++) {
