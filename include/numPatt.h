@@ -4,7 +4,11 @@
 #include <string>
 #include <vector>
 
-void eTriangle(int x) {
+void eTriangle() {
+    int x; 
+    std::cout << "How many levels do you want to print? \n";
+    std::cout << "$ ";
+    std::cin >> x; 
     // space counter
     int spaceCounter = x;
     // asterisk counter

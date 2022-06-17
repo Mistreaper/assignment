@@ -4,6 +4,6 @@
 #include "hack.h"
 
 int main() {
-    eTriangle(10); 
+    eTriangle(); 
     return 0;
 }
