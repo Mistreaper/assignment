@@ -1,10 +1,68 @@
 #ifndef HACKEREARTH_H
 #define HACKEREARTH_H
 #include <iostream>
+#include <vector>
+#include <numeric>
+
+void compareTriplets() {
+    int alicepoints;
+    int bobpoints; 
+
+    std::vector<int> a, b; 
+    // get values of a and b
+    for (int i = 0; i < 3; i++) {
+        int valueToBeAdded; 
+        std::cin >> valueToBeAdded;
+        a.push_back(valueToBeAdded);
+    }
+    for (int i = 0; i < 3; i++) {
+        int valueToBeAdded; 
+        std::cin >> valueToBeAdded;
+        b.push_back(valueToBeAdded);
+    }
+    std::vector<int> aliceandbob;
+    for (int i = 0; i <=2; i++) {
+        if (a[i] > b[i]) {
+           alicepoints++; 
+        } else if (a[i] < b[i]) {
+            bobpoints++;
+        }
+    }
+    // aliceandbob[0] = alicepoints;
+    // aliceandbob[1] = bobpoints; 
+    // aliceandbob.insert(aliceandbob.end(), {alicepoints, bobpoints});
+    // aliceandbob.push_back(alicepoints);
+    // aliceandbob.push_back(bobpoints);
+    std::cout << alicepoints << " " << bobpoints << std::endl;
+}
+// first line is n, the size of the array
+// second line is space-separated ints to put in array
+void simpleArraySum() {
+    // get n
+    int n;
+    std::cin >> n;
+    // std::cout << "\n";
+    
+    // create the array
+    std::vector<int> ar;
+    int sum;
+    // add value to array
+    for (int i = 0; i < n; i++) {
+        int valueToBeAdded;
+        std::cin >> valueToBeAdded;
+        ar.push_back(valueToBeAdded);
+        if (std::cin.peek() == '\n') {
+            break;
+        } 
+    } 
+    
+    // sum them.  
+    sum = std::accumulate(ar.begin(), ar.end(), 0);
+    std::cout << sum << std::endl;
+}
 
 // First line is number of rectangles, the rest is the width and height of them. Print the number of golden rectangles.
 // Remember that it doesn't specify W:H or H:W, that means we have to check both.
-
 void goldenRectangle() {
     // number of rects
     int rectNum;

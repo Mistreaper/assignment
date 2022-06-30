@@ -4,7 +4,6 @@
 #include <hackerearth.h>
 
 int main() {
-    goldenRectangle();
-
+    compareTriplets(); 
     return 0;
 }
