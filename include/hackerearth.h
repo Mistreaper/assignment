@@ -4,9 +4,9 @@
 #include <vector>
 #include <numeric>
 
-void compareTriplets() {
-    int alicepoints;
-    int bobpoints; 
+std::vector<int> compareTriplets() {
+    int alicepoints = 0;
+    int bobpoints = 0; 
 
     std::vector<int> a, b; 
     // get values of a and b
@@ -21,19 +21,21 @@ void compareTriplets() {
         b.push_back(valueToBeAdded);
     }
     std::vector<int> aliceandbob;
-    for (int i = 0; i <=2; i++) {
+    for (int i = 0; i < 3; i++) {
         if (a[i] > b[i]) {
            alicepoints++; 
         } else if (a[i] < b[i]) {
             bobpoints++;
+        } else if (a[i] == b[i]) {
+            alicepoints+=0; 
+            bobpoints+=0;
         }
     }
-    // aliceandbob[0] = alicepoints;
-    // aliceandbob[1] = bobpoints; 
     // aliceandbob.insert(aliceandbob.end(), {alicepoints, bobpoints});
-    // aliceandbob.push_back(alicepoints);
-    // aliceandbob.push_back(bobpoints);
-    std::cout << alicepoints << " " << bobpoints << std::endl;
+    aliceandbob.push_back(alicepoints);
+    aliceandbob.push_back(bobpoints);
+    // std::cout << aliceandbob[0] << " " << aliceandbob[1];
+    return aliceandbob;
 }
 // first line is n, the size of the array
 // second line is space-separated ints to put in array
