@@ -1,9 +1,10 @@
 #include <iostream>
 #include "primenums.h"
 #include "numPatt.h"
-#include "hack.h"
+#include <hackerearth.h>
 
 int main() {
-    eTriangle(); 
+    goldenRectangle();
+
     return 0;
 }
