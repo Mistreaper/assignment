@@ -1,10 +1,29 @@
-#ifndef HACKEREARTH_H
+
+#ifndef HACKEREARTH_H 
 #define HACKEREARTH_H
 #include <iostream>
 #include <vector>
 #include <numeric>
 
-std::vector<int> compareTriplets() {
+// Return amount of tallest candles
+int birthdayCakeCandles(int candleAmount, std::vector<int> candles) {
+    int greatestValue = 0;
+    for (int n = 0; n < candleAmount; n++) {
+        if (candles[0] < candles[n]) {
+            greatestValue = candles[n];
+        }
+    } 
+
+    int y;
+    for (int i = 0; i < candleAmount; i++) {
+        if (candles[i] == greatestValue) {
+            y++;
+        }
+    }
+    return y;
+}
+
+inline std::vector<int> compareTriplets() {
     int alicepoints = 0;
     int bobpoints = 0; 
 
@@ -39,7 +58,7 @@ std::vector<int> compareTriplets() {
 }
 // first line is n, the size of the array
 // second line is space-separated ints to put in array
-void simpleArraySum() {
+inline void simpleArraySum() {
     // get n
     int n;
     std::cin >> n;
@@ -65,7 +84,7 @@ void simpleArraySum() {
 
 // First line is number of rectangles, the rest is the width and height of them. Print the number of golden rectangles.
 // Remember that it doesn't specify W:H or H:W, that means we have to check both.
-void goldenRectangle() {
+inline void goldenRectangle() {
     // number of rects
     int rectNum;
     // number of golden rects
