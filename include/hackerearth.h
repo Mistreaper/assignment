@@ -6,21 +6,20 @@
 #include <numeric>
 
 // Return amount of tallest candles
-int birthdayCakeCandles(int candleAmount, std::vector<int> candles) {
-    int greatestValue = 0;
-    for (int n = 0; n < candleAmount; n++) {
-        if (candles[0] < candles[n]) {
-            greatestValue = candles[n];
-        }
-    } 
-
-    int y;
-    for (int i = 0; i < candleAmount; i++) {
-        if (candles[i] == greatestValue) {
-            y++;
+int birthdayCakeCandles(int candleAmount) {
+    int max = 0; 
+    int count = 1; 
+    for (int it = 0; it < candleAmount; it++) {
+        int n;
+        std::cin >> n;
+        if (max < n) {
+            max = n;
+            count = 1; 
+        } else if (max == n) {
+            count++;
         }
     }
-    return y;
+    return count;
 }
 
 inline std::vector<int> compareTriplets() {
