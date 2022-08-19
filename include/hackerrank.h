@@ -1,9 +1,10 @@
 
-#ifndef HACKEREARTH_H 
-#define HACKEREARTH_H
+#ifndef HACKERRANK_H 
+#define HACKERRANK_H
 #include <iostream>
 #include <vector>
 #include <numeric>
+
 
 // Return amount of tallest candles
 int birthdayCakeCandles(int candleAmount) {

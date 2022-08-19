@@ -1,5 +1,5 @@
 #include <iostream>
-#include <hackerearth.h>
+#include <hackerrank.h>
 
 int main() {
     int x;
