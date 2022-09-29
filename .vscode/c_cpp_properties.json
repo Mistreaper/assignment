@@ -5,7 +5,8 @@
             "includePath": [
                 "${default}",
                 "${workspaceFolder}/include",
-                "C:\\ProgramData\\scoop\\apps\\SDL2\\current\\include"
+                "C:\\ProgramData\\scoop\\apps\\SDL2\\current\\include",
+                // "C:\\MinGW\\include"
             ],
             "defines": [
                 "_DEBUG",

@@ -1,10 +1,8 @@
-
 #ifndef HACKERRANK_H 
 #define HACKERRANK_H
 #include <iostream>
 #include <vector>
 #include <numeric>
-
 
 // Return amount of tallest candles
 int birthdayCakeCandles(int candleAmount) {
@@ -17,7 +15,7 @@ int birthdayCakeCandles(int candleAmount) {
             max = n;
             count = 1; 
         } else if (max == n) {
-            count++;
+            count++; 
         }
     }
     return count;
