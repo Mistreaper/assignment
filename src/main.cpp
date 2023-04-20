@@ -1,9 +1,10 @@
 #include <iostream>
 #include <hackerrank.h>
-
+#include <string>
 int main() {
-    int x;
+    std::string x;
     std::cin >> x;
-    std::cout << birthdayCakeCandles(x) << std::endl;
+    std::cout << timeConversion(x) 
+    << std::endl;
     return 0;
 }

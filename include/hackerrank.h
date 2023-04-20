@@ -1,8 +1,60 @@
 #ifndef HACKERRANK_H 
 #define HACKERRANK_H
 #include <iostream>
+#include <string>
 #include <vector>
 #include <numeric>
+#include <iomanip>
+/*
+if last is AM, first number stays the same exception if 1st number is 12 then 0:
+12am 0
+1am 01 (check if string has exactly 8 chars, if less add `0` to front)
+2am 02 until 11am 11 
+if last is PM, add 12 to first two numbers:
+12Pm 12
+1PM 13
+2PM 14
+
+*/
+
+// Convert 12h to 24h (12:01:00AM, return 00:01:00)
+std::string timeConversion(std::string s) {
+    if (s[8] == 'P' && s[9] == 'M') {
+        std::string sHour = s.substr(0,2);
+        std::string returnHour = s;
+        int hour = stoi(sHour);
+        if (hour < 12) {
+            hour+=12;
+        } else {
+            hour += 0;
+        }
+        std::cout << std::setw(2) << std::setfill('0') << hour;
+        std::string finalHour = std::to_string(hour);
+        returnHour[0] = finalHour[0];
+        returnHour[1] = finalHour[1];
+        if (returnHour.length() < 10) {
+            returnHour.insert(0,1,'0');
+        }
+        return returnHour;
+    } else if (s[8] == 'A' && s[9] == 'M') {
+        std::string sHour = s.substr(0,2);
+        std::string returnHour = s; 
+        int hour = stoi(sHour);
+        if (hour == 12) {
+            hour-=12; 
+        } else {
+            hour+=0;
+        }
+        std::cout << std::setw(2) << std::setfill('0') << hour;
+        std::string finalHour = std::to_string(hour);
+        returnHour[0] = finalHour[0];
+        returnHour[1] = finalHour[1];
+        return returnHour;
+    } else {
+        return "error";     
+    }
+    return "0";
+}
 
 // Return amount of tallest candles
 int birthdayCakeCandles(int candleAmount) {
