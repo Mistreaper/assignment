@@ -5,6 +5,27 @@
 #include <vector>
 #include <numeric>
 #include <iomanip>
+
+std::vector<int> twoSum(vector<int>& nums, int target) {
+    std::vector<int> answer;
+
+    for (int i = 0; i < nums.size(); i++) {
+        for (int j = 0; j < nums.size(); j++){
+            if (j == i) {
+                j++;
+            }
+            if (nums[i] + nums[j] == target) {
+                answer.push_back(i);
+                answer.push_back(j);
+                return answer;
+
+            }
+        }
+    }
+    return answer;
+}
+
+
 /*
 if last is AM, first number stays the same exception if 1st number is 12 then 0:
 12am 0

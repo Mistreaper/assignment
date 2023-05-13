@@ -67,5 +67,6 @@
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "python.envFile": "${workspaceFolder}\\.databricks\\.databricks.env",
-    "databricks.python.envFile": "${workspaceFolder}/.env"
+    "databricks.python.envFile": "${workspaceFolder}/.env",
+    "C_Cpp.default.compilerPath": "C:\\ProgramData\\scoop\\apps\\mingw\\current\\bin\\g++.exe"
 }

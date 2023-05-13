@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <hackerrank.h>
 
 void printSomething(int *pX) {
    std::cout << "X value is " << *pX << std::endl;
@@ -7,8 +7,7 @@ void printSomething(int *pX) {
 
 int main(void)
 {
-   int x = 5;
-   int *pX = NULL; // assign NULL before declaring a pointer`
-   pX = &x;
-   printSomething(pX);
+
+   twoSum();
+   
 }
