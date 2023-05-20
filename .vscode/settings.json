@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "MLTable": "yaml",
         "array": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
@@ -63,10 +64,22 @@
         "xlocmes": "cpp",
         "xlocmon": "cpp",
         "xloctime": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "condition_variable": "cpp",
+        "deque": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "numeric": "cpp",
+        "queue": "cpp",
+        "ranges": "cpp",
+        "set": "cpp",
+        "span": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "xhash": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.errorSquiggles": "enabled",
     "python.envFile": "${workspaceFolder}\\.databricks\\.databricks.env",
     "databricks.python.envFile": "${workspaceFolder}/.env",
-    "C_Cpp.default.compilerPath": "C:\\ProgramData\\scoop\\apps\\mingw\\current\\bin\\g++.exe"
+    "C_Cpp.default.compilerPath": "cl.exe"
 }

@@ -1,13 +1,14 @@
 #include <iostream>
 #include <hackerrank.h>
+#include <linkedlists.h>
+#include <stringz.h>
+using namespace std;
 
-void printSomething(int *pX) {
-   std::cout << "X value is " << *pX << std::endl;
-}
-
-int main(void)
+int main()
 {
-
-   twoSum();
-   
+   cout << lengthOfLongestSubstring("abcabcbb") << endl;
+   cout << lengthOfLongestSubstring("bbbbb") << endl;
+   cout << lengthOfLongestSubstring("pwwwke") << endl;
+   return 0;
 }
+
